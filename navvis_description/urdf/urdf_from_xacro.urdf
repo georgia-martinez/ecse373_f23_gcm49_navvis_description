@@ -39,26 +39,6 @@
       </geometry>
     </collision>
   </link>
-  <joint name="wheel_left_joint" type="continuous">
-    <parent link="base"/>
-    <child link="wheel_left"/>
-    <!-- Weirdness with evaluating pi-->
-    <origin rpy="-1.5707963267948966 0 0" xyz="-0.1 0.4 0"/>
-  </joint>
-  <link name="wheel_left">
-    <visual>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder length="0.05" radius="0.2"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder length="0.05" radius="0.2"/>
-      </geometry>
-    </collision>
-  </link>
   <joint name="base_laser_vert_bottom_joint" type="fixed">
     <parent link="base"/>
     <child link="laser_vert_bottom"/>
@@ -136,4 +116,3 @@
     </collision>
   </link>
 </robot>
-
