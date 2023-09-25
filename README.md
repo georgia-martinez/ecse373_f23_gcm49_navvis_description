@@ -10,4 +10,4 @@ Run with GUI:
 
 Run without GUI:
 
-`roslaunch navvis_description display.launch use_xacro:=true use_join_state_publisher_gui:=false`
+`roslaunch navvis_description display.launch use_xacro:=true use_joint_state_publisher_gui:=false`
